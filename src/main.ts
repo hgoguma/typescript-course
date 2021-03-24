@@ -36,3 +36,27 @@ const user2: UserInterface = {
     }
 };
 
+let username: string = "alex";
+
+// Union : Operator to combine data types
+// = 다음은 default value
+let pageName: string | number = "1";
+
+let errorMessage: string | null = null;
+
+// Type Alias
+type ID = string
+type PopluarTag = string;
+
+interface UserInterface2 {
+    id: ID;
+    name: string
+    surname: string
+}
+
+// PopluarTag Entity의 array 임을 알 수 있음
+const popluarTags: PopluarTag[] = ["dargon", "coffee"];
+
+let user3: UserInterface2 | null;
+
+
